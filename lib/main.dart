@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nihongo_spark/screens/home/home.dart';
+
+import 'constants/init.dart';
 
 void main() {
     runApp(const MyApp());
@@ -15,9 +18,8 @@ class MyApp extends StatelessWidget {
                 colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
                 useMaterial3: true,
             ),
-            home: SafeArea(
-                child: const Text('Its work'),
-            ),
+            home: Home(),
+            debugShowCheckedModeBanner: false,
         );
     }
 }
