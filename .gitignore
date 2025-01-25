@@ -1,0 +1,44 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Generated files
+build/
+*.iml
+*.log
+pubspec.lock
+
+# Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/Pods/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/engine/
+ios/.symlinks/
+ios/Flutter/App.framework/
+ios/Flutter/Debug.xcconfig
+ios/Flutter/Release.xcconfig
+ios/Flutter/Generated.xcconfig
+
+# macOS, Windows, Linux
+macos/Flutter/ephemeral/
+windows/Flutter/ephemeral/
+linux/Flutter/ephemeral/
+
+# IDE-specific
+.idea/
+.vscode/
+
+# Others
+*.DS_Store
+*.lock
+*.bak
+*.tmp
