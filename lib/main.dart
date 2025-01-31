@@ -1,25 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:nihongo_spark/screens/home/home.dart';
-
 import 'constants/init.dart';
 
-void main() {
-    runApp(const MyApp());
+void main()
+{
+    runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-    const MyApp({super.key});
-
+class MyApp extends StatelessWidget
+{
     @override
-    Widget build(BuildContext context) {
+    Widget build(BuildContext context)
+    {
         return MaterialApp(
-            title: 'Nihongo Spark',
-            theme: ThemeData(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-                useMaterial3: true,
-            ),
-            home: Home(),
             debugShowCheckedModeBanner: false,
+            home: Home(),
         );
     }
 }
