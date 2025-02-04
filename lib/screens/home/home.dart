@@ -9,11 +9,14 @@ class Home extends StatelessWidget {
       backgroundColor: RGBO_BACKGROUND_COLOR,
       appBar: AppBar(
         backgroundColor: RGBO_BLUE_COLOR,
-        title: Text('Nihongo Spark',
-            style: TextStyle(
-                fontSize: 13,
-                color: Colors.white,
-                fontWeight: FontWeight.w500)),
+        title: Text(
+          'Nihongo  Spark',
+          style: TextStyle(
+            fontSize: 13,
+            color: Colors.white,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
         toolbarHeight: 20,
         centerTitle: true,
       ),
@@ -25,10 +28,7 @@ class Home extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [
-                  RGBO_BLUE_COLOR,
-                  RGBO_BLUE_FADE_COLOR,
-                ],
+                colors: [RGBO_BLUE_COLOR, RGBO_BLUE_FADE_COLOR],
               ),
             ),
             child: Row(
@@ -44,21 +44,33 @@ class Home extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text("@username",
-                            style: TextStyle(
-                                fontSize: 17,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w500)),
-                        SizedBox(width: 5),
+                        Text(
+                          "@username",
+                          style: TextStyle(
+                            fontSize: 17,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(width: 5)
                       ],
                     ),
-                    Text("5 sparks",
-                        style: TextStyle(color: Colors.white, fontSize: 13)),
-                    SizedBox(height: 5),
+                    Text(
+                      "5 sparks",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                      ),
+                    ),
+                    SizedBox(height: 5)
                   ],
                 ),
                 Spacer(),
-                Icon(FontAwesomeIcons.pen, color: Colors.white, size: 13),
+                Icon(
+                  FontAwesomeIcons.pen,
+                  color: Colors.white,
+                  size: 13,
+                )
               ],
             ),
           ),
@@ -73,14 +85,16 @@ class Home extends StatelessWidget {
                     "Luyện tập bảng chữ Katakana"),
                 SizedBox(height: 5),
                 _listItem(
-                    FontAwesomeIcons.random, "Nâng cao", "Luyện tập nâng cao"),
+                    FontAwesomeIcons.random, "Nâng cao", "Luyện tập nâng cao")
               ],
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Text("Quản lý chung",
-                style: TextStyle(fontWeight: FontWeight.bold)),
+            child: Text(
+              "Quản lý chung",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
           Container(
             padding: EdgeInsets.all(16),
@@ -93,10 +107,10 @@ class Home extends StatelessWidget {
                     FontAwesomeIcons.gift, "Nhiệm vụ", "Nhiệm vụ hằng ngày"),
                 SizedBox(height: 5),
                 _listItem(
-                    FontAwesomeIcons.coins, "Nâng cấp", "Nâng cấp tài khoản"),
+                    FontAwesomeIcons.coins, "Nâng cấp", "Nâng cấp tài khoản")
               ],
             ),
-          ),
+          )
         ],
       ),
     );
@@ -104,19 +118,28 @@ class Home extends StatelessWidget {
 
   Widget _listItem(IconData icon, String title, String subtitle) {
     return ListTile(
-      leading: Icon(icon, color: RGBO_BLUE_COLOR, size: 20),
-      title: Text(title,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-      subtitle:
-          Text(subtitle, style: TextStyle(color: Colors.grey, fontSize: 12)),
-      trailing: Icon(Icons.chevron_right, color: Colors.grey),
+      leading: Icon(
+        icon,
+        color: RGBO_BLUE_COLOR,
+        size: 20,
+      ),
+      title: Text(
+        title,
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+      ),
+      subtitle: Text(
+        subtitle,
+        style: TextStyle(color: Colors.grey, fontSize: 12),
+      ),
+      trailing: Icon(
+        Icons.chevron_right,
+        color: Colors.grey,
+      ),
       tileColor: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      contentPadding: EdgeInsets.symmetric(
-        horizontal: 16,
-      ),
+      contentPadding: EdgeInsets.symmetric(horizontal: 16),
     );
   }
 }
